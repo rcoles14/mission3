@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="~/img/10-105431_png-file-svg-golf-icon-png-transparent-png.png" type="image/x-icon">
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+        <button><a asp-controller="Basic" asp-action="Index">Home</a></button>
+        <button><a asp-controller="Basic" asp-action="Calculator">Grade Calculator</a></button>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- JavaScript -->
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

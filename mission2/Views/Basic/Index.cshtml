@@ -2,18 +2,8 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Cole's Homepage";
 }
-<!DOCTYPE html>
-<html>
-<!-- Cole Smith, Section 2 -->
-<head>
-    <meta charset="utf-8" />
-    <title>Cole's Mission2 Webpage</title>
-    <link rel="icon" href="img/10-105431_png-file-svg-golf-icon-png-transparent-png.png" type="image/x-icon">
-    <link href="css/default.css" rel="stylesheet" />
-    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-</head>
-<body>
     <!-- Header -->
     <h1>Cole Smith</h1><br /><br />
     <!-- Picture of Cole Playing Golf -->
@@ -32,27 +22,3 @@
         <li>Sports Data Analyst</li>
     </ul><br />
 
-    <!-- Grade Calculator -->
-    <p class="bold">Grade Calculator</p>
-    <p class="italic">Please Enter the grades (ex. 85.57 or 100) received in each category to calculate final grade.</p>
-    <form>
-        <label>Assignments</label>
-        <input id="assignments" required /><br />
-        <label>Group Project</label>
-        <input id="GroupProj" required /><br />
-        <label>Quizes</label>
-        <input id="quizes" required /><br />
-        <label>Exams</label>
-        <input id="exams" required /><br />
-        <label>Intex</label>
-        <input id="intex" required /><br />
-        <input type="button" id="submit" class="btn1" value='Calculate' />
-        <span id="output"></span>
-    </form>
-
-    <!-- JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
-    <script src="js/calculator.js"></script>
-</body>
-</html>

@@ -24,13 +24,17 @@ namespace mission2
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
+            if (env.IsEnvironment("Development"))
+            {
+                app.UseDeveloperExceptionPage();
+            }
             app.UseStaticFiles();
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller-Basic}/{action-Index}/{id?}"
+                    pattern: "{controller=Basic}/{action=Index}/{id?}"
                     );
             });
         }

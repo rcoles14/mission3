@@ -12,5 +12,10 @@ namespace mission2.Controllers
         {
             return View();
         }
+
+        public IActionResult Calculator()
+        {
+            return View();
+        }
     }
 }
