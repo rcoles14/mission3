@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using mission2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,13 @@ namespace mission2.Controllers
         {
             return View();
         }
-
-        public IActionResult Calculator()
+        [HttpGet]
+        public IActionResult Calculator ()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Calculator (CalculatorModel model)
         {
             return View();
         }

@@ -4,21 +4,23 @@
 @{
     ViewData["Title"] = "Grade Calculator";
 }
+@model CalculatorModel
 <!-- Grade Calculator -->
 <p class="bold">Grade Calculator</p>
 <p class="italic">Please Enter the grades (ex. 85.57 or 100) received in each category to calculate final grade.</p>
-<form>
+<form method="post">
     <label>Assignments</label>
-    <input id="assignments" required /><br />
+    <input id="assignments" asp-for="assignments" /><br />
     <label>Group Project</label>
-    <input id="GroupProj" required /><br />
+    <input id="GroupProj"  asp-for="GroupProj"/><br />
     <label>Quizes</label>
-    <input id="quizes" required /><br />
+    <input id="quizes" asp-for="quizes" /><br />
     <label>Exams</label>
-    <input id="exams" required /><br />
+    <input id="exams"  asp-for="exams"/><br />
     <label>Intex</label>
-    <input id="intex" required /><br />
+    <input id="intex"  asp-for="intex"/><br />
     <input type="button" id="submit" class="btn1" value='Calculate' />
+    <div asp-validation-summary="All"></div>
     <span id="output"></span>
 </form>
 <script src="~/js/calculator.js"></script>

@@ -45,7 +45,7 @@
     if (output != '') {
         $('#output').html(output);
     }
-    else {
+/*    else {
         alert("Please correctly fill out the form")
-    }
+    }*/
 })
