@@ -12,15 +12,14 @@
     <label>Assignments</label>
     <input id="assignments" asp-for="assignments" /><br />
     <label>Group Project</label>
-    <input id="GroupProj"  asp-for="GroupProj"/><br />
+    <input id="GroupProj" asp-for="GroupProj" /><br />
     <label>Quizes</label>
     <input id="quizes" asp-for="quizes" /><br />
     <label>Exams</label>
-    <input id="exams"  asp-for="exams"/><br />
+    <input id="exams" asp-for="exams" /><br />
     <label>Intex</label>
-    <input id="intex"  asp-for="intex"/><br />
-    <input type="button" id="submit" class="btn1" value='Calculate' />
-    <div asp-validation-summary="All"></div>
+    <input id="intex" asp-for="intex" /><br />
+    <input type="submit" id="submit" class="btn1" value='Calculate' />
     <span id="output"></span>
+    <div asp-validation-summary="All"></div>
 </form>
-<script src="~/js/calculator.js"></script>
