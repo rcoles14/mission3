@@ -55,5 +55,5 @@
 
 window.onload = function () {
     $('#output').html(sessionStorage.getItem('output'));
-    sessionStorage.clear()
+    sessionStorage.clear();
 }
